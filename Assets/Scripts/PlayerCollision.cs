@@ -5,6 +5,7 @@ public class PlayerCollision : MonoBehaviour
     public Rigidbody playerrb;
     public PlayerMovement movement;
     public CoinSpawner spawner;
+    public int coinWinCount = 0;
 
     private void Start()
     {
@@ -25,7 +26,13 @@ public class PlayerCollision : MonoBehaviour
         {
             int pos = other.gameObject.GetComponent<Coin>().position;
             spawner.ResetSpawn(pos);
+            coinWinCount++;
             Destroy(other.gameObject);
+
+            if(coinWinCount == 10)
+            {
+                Time.timeScale = 0.0f;
+            }
         }
     }
 }

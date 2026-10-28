@@ -58,5 +58,6 @@ public class PlayerMovement : MonoBehaviour
     public void PlayerDie()
     {
         Destroy(gameObject);
+        Time.timeScale = 0.0f;
     }
 }

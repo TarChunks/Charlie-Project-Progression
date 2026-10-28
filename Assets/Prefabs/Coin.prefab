@@ -60,6 +60,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 8f1c5270f46897549bca3feffb7cac17, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 118e4ff9d1e234e49bae4fc743fcfa8d, type: 2}
     - target: {fileID: 919132149155446097, guid: 8f1c5270f46897549bca3feffb7cac17, type: 3}
       propertyPath: m_Name
       value: Coin
@@ -117,5 +121,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4c2c43188bf3b04b85056c677217aab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
+  spawnObject: {fileID: 0}
   spawner: {fileID: 0}
   position: 0
