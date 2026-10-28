@@ -1121,8 +1121,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StarSpawner
   Star: {fileID: 6210847847228550285, guid: 92f02a85d914b9d49b8135c69f84e393, type: 3}
-  TimerStar: {fileID: 0}
+  TimerStar: {fileID: 6391168138459384192, guid: ad21c4dd46d8482479ab3f5ca9f14a83, type: 3}
   starCooldownTime: 2.5
+  starTimerCooldownTime: 30
   spawnHeight: 10
 --- !u!4 &909369311
 Transform:
@@ -1469,6 +1470,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8854300af7fb04f42b0b6e653e3087d7, type: 3}
       propertyPath: m_Name
       value: Player Character
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8854300af7fb04f42b0b6e653e3087d7, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
