@@ -26,6 +26,12 @@ public class CoinSpawner : MonoBehaviour
     {
         timeTime += Time.deltaTime;
         
+        if (coinCount == 0)
+        {
+            SpawnCoin();
+            timeTime = 0.0f;
+        }
+
         if (timeTime > spawnTime && coinCount < coinCap)
         {
             SpawnCoin();
