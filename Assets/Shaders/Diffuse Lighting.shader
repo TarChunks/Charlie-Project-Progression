@@ -4,6 +4,7 @@ Shader "Custom/DiffuseLighting"
     {
         _BaseTex("Base Texture", 2D) = "white" {}
         _BaseColor("Base Color", Color) = (1,1,1,1)
+        _BaseBool("Base Bool", int) = 1
     }
 
     SubShader
@@ -38,6 +39,7 @@ Shader "Custom/DiffuseLighting"
 
             CBUFFER_START(UnityPerMaterial);
             float4 _BaseColor;
+            int _BaseBool;
             CBUFFER_END
 
             Varyings vert(Attributes IN)
@@ -55,12 +57,20 @@ Shader "Custom/DiffuseLighting"
 
                 half3 finalColor = texColor.rgb * _BaseColor.rgb;
 
-                half3 normal = normalize(IN.normalWS);
-                Light mainLight = GetMainLight();
-                half3 lightDir = normalize(mainLight.direction);
-                half NdotL = saturate(dot(normal, lightDir));
+                if (_BaseBool == 0)
+                {
+                    half3 normal = normalize(IN.normalWS);
+                    Light mainLight = GetMainLight();
+                    half3 lightDir = normalize(mainLight.direction);
+                    half NdotL = saturate(dot(normal, lightDir));
 
-                return half4(finalColor * NdotL, 1.0);
+                    return half4(finalColor * NdotL, 1.0);
+                }
+
+                else
+                {
+                    return half4(finalColor, 1.0);
+                }
             }
             ENDHLSL
         }
