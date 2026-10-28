@@ -34,5 +34,10 @@ public class PlayerCollision : MonoBehaviour
                 Time.timeScale = 0.0f;
             }
         }
+
+        if (other.gameObject.CompareTag("Star"))
+        {
+            movement.PlayerDie();
+        }
     }
 }
