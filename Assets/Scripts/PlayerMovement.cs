@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.LowLevel;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -13,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
     float xforce = 0.0f;
     float zforce = 0.0f;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    //sets position of x-zpos to the current position of the object
     void Start()
     {
         playerrb = GetComponent<Rigidbody>();
@@ -22,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
         zPos = transform.position.z;
     }
 
-    // Update is called once per frame
+    //checks if keys are held
     void Update()
     {
         if (Keyboard.current.dKey.isPressed)
@@ -46,10 +47,16 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void FixedUpdate()
+    //applies the final force
+    void FixedUpdate()
     {
         playerrb.AddForce(new Vector3(xforce, 0, zforce), ForceMode.Force);
         xforce = 0.0f;
         zforce = 0.0f;
+    }
+
+    public void PlayerDie()
+    {
+        Destroy(gameObject);
     }
 }
