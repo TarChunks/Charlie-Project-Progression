@@ -1566,6 +1566,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   playerSpeed: 1
+  Material1: {fileID: 2100000, guid: de6fbdc22e9559d44bfa5e5e8a971a54, type: 2}
+  Material2: {fileID: 2100000, guid: 81092f9f20f8cef48aa1941796d1a8a5, type: 2}
+  Material3: {fileID: 2100000, guid: 118e4ff9d1e234e49bae4fc743fcfa8d, type: 2}
+  Material4: {fileID: 2100000, guid: 67081e94c6c020b47a4ca56b018b3b6e, type: 2}
+  Material5: {fileID: 2100000, guid: 14712a314769d724dbc6cbb7aec6eb25, type: 2}
+  shaderToggle1x1Name: _ToggleSmooth
+  shaderToggle1x2Name: _ToggleMetal
+  shaderToggle2x1Name: _BaseBool
+  shaderToggle3x1Name: _ShininessToggle
+  shaderToggle3x2Name: _SmoothnessToggle
+  shaderToggle4x1Name: _EmissionToggle
+  boolTemp1: 0
+  boolTemp2: 0
 --- !u!114 &1353633816
 MonoBehaviour:
   m_ObjectHideFlags: 0
