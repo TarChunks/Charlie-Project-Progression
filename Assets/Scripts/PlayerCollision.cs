@@ -6,6 +6,8 @@ public class PlayerCollision : MonoBehaviour
     public PlayerMovement movement;
     public CoinSpawner spawner;
     public int coinWinCount = 0;
+    float gracePeriodTimer;
+    public float gracePeriodTime = 2.0f;
 
     private void Start()
     {
@@ -33,6 +35,12 @@ public class PlayerCollision : MonoBehaviour
             {
                 movement.PlayerWin();
             }
+        }
+
+        if (other.gameObject.CompareTag("Power Up"))
+        {
+            movement.PlayerShield();
+            Destroy(other.gameObject);
         }
 
         if (other.gameObject.CompareTag("Star"))

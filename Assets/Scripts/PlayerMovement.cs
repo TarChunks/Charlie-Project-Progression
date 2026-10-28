@@ -41,6 +41,11 @@ public class PlayerMovement : MonoBehaviour
     public GameObject LoseScreen;
     public GameObject WinScreen;
 
+    public bool isShield = false;
+    public GameObject shieldObj;
+    float gracePeriodTimer;
+    public float gracePeriodTime = 2.0f;
+
     //sets position of x-zpos to the current position of the object
     void Start()
     {
@@ -53,6 +58,7 @@ public class PlayerMovement : MonoBehaviour
     //checks if keys are held
     void Update()
     {
+        gracePeriodTimer += Time.deltaTime;
         if (Keyboard.current.dKey.isPressed)
         {
             xforce = playerSpeed;
@@ -121,11 +127,30 @@ public class PlayerMovement : MonoBehaviour
         zforce = 0.0f;
     }
 
+    public void PlayerShield()
+    {
+        if (isShield == false)
+        {
+            isShield = true;
+            shieldObj.SetActive(true);
+        }
+    }
+
     public void PlayerDie()
     {
-        Destroy(gameObject);
-        LoseScreen.SetActive(true);
-        Time.timeScale = 0.0f;
+        if (isShield == true && gracePeriodTimer >= gracePeriodTime)
+        {
+            isShield = false;
+            shieldObj.SetActive(false);
+            gracePeriodTime = 0.0f;
+            Debug.Log("Hit Shield");
+        }
+        else if (isShield == false && gracePeriodTimer >= gracePeriodTime)
+        {
+            Destroy(gameObject);
+            LoseScreen.SetActive(true);
+            Time.timeScale = 0.0f;
+        }
     }
 
     public void PlayerWin()
