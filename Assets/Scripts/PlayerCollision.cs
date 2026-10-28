@@ -31,7 +31,7 @@ public class PlayerCollision : MonoBehaviour
 
             if(coinWinCount == 10)
             {
-                Time.timeScale = 0.0f;
+                movement.PlayerWin();
             }
         }
 

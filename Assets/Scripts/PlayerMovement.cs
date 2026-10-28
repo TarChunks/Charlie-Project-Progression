@@ -4,6 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.LowLevel;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -36,6 +37,9 @@ public class PlayerMovement : MonoBehaviour
 
     public float boolTemp1;
     public float boolTemp2;
+
+    public GameObject LoseScreen;
+    public GameObject WinScreen;
 
     //sets position of x-zpos to the current position of the object
     void Start()
@@ -120,6 +124,13 @@ public class PlayerMovement : MonoBehaviour
     public void PlayerDie()
     {
         Destroy(gameObject);
+        LoseScreen.SetActive(true);
+        Time.timeScale = 0.0f;
+    }
+
+    public void PlayerWin()
+    {
+        WinScreen.SetActive(true);
         Time.timeScale = 0.0f;
     }
 
