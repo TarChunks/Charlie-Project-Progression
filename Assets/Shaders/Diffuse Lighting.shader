@@ -9,7 +9,7 @@ Shader "Custom/DiffuseLighting"
 
     SubShader
     {
-        Tags { "RenderPipeline" = "UniversalRenderPipeline" "RenderType" = "Opaque" }
+        Tags { "RenderPipeline" = "UniversalRenderPipeline" "RenderType" = "Opaque"}
 
         Pass
         {
