@@ -5,7 +5,7 @@ Part 1:\
 \
   The game I've created for this project is simple in nature. You play as a UFO and your goal is to gather the coins that spawn around you in a small area and avoid stars that fall from the sky and explode. The player wins upon collecting 10 coins and loses upon touching either the stars or the explosions they create. The play area is restricted to a small grassy area surrounded by cliff faces. This was done for practicalities sake as I figured a small area would be much easier to apply shading and lighting to singlehandedly over a (relatively) brief period of time. The game also features a blue star that spawns later in the game and chases the player and a powerup that gives the player a shield, allowing them to survive a star hit.\
 \
-<img width="1094" height="604" alt="Screenshot 2026-10-28 200941" src="https://github.com/user-attachments/assets/365ebb43-8dfc-47f4-a050-f828e9202dda" />\
+<img width="1093" height="604" alt="Screenshot 2026-10-28 210334" src="https://github.com/user-attachments/assets/cda6092b-cc80-4f9b-9b9b-14178836b076" />\
 An image of the final play area, note the player character in the centre of the screen.\
 \
 <img width="255" height="292" alt="Screenshot 2026-10-28 201307" src="https://github.com/user-attachments/assets/5856d464-8753-4588-9875-a7f312c0b5ed" />\
@@ -38,7 +38,27 @@ This code in the PlayerMovement script controls dying, winning and how the shiel
 This is the collision code for everything in the game. Upon colliding with the trigger of an explosion of the collider of a star the player will die. Upon touching a shield power up, the player will gain a shield (assuming they don't already have one) and the power up will be destroyed. Coins are also destroyed on contact along with increasing the number of coins the player has allowing them to eventually win.\
 \
 Part 2:\
-  The game has simple diffuse lighting in the form of the grass seen in the play area and around the cliffs. This is the only shader I chose to manually code rather than using Shadergraph. I vastly prefer Shadergraph as I find it more transparent and easier to understand what the individual building blocks of your shader does, but I figured it'd be for the best to demonstrate that I am capable of coding a shader if need be. Diffuse lighting with ambient lighting is also present for the cliff faces that border the play area and box the player in. Specular lighting also exists on the coins the player collects, which makes both logical and practical sense since it is best for the players objective to be shiny and eyecatching. Emissive lighting was also added for the stars that fall on the player for the same practical and logical reasons that coins were given the shiny lighting, the stars need to be eyecatching and stars glow so it only made sense.\
+  The game has simple diffuse lighting in the form of the grass seen in the play area and around the cliffs. This is the only shader I chose to manually code rather than using Shadergraph. I vastly prefer Shadergraph as I find it more transparent and easier to understand what the individual building blocks of your shader does, but I figured it'd be for the best to demonstrate that I am capable of coding a shader if need be. Diffuse lighting with ambient lighting is also present for the cliff faces that border the play area and box the player in. Specular lighting also exists on the coins the player collects, which makes both logical and practical sense since it is best for the players objective to be shiny and eyecatching. Emissive lighting was also added for the stars that fall on the player for the same practical and logical reasons that coins were given the shiny lighting, the stars need to be eyecatching and stars glow so it only made sense. The UFO body of the player has Fresnel lighting on it giving it a light blue outline (the dome on the other hand is another use of emissive lighting).\
+\
+<img width="414" height="668" alt="Screenshot 2026-10-28 205854" src="https://github.com/user-attachments/assets/d911d1bd-79c3-44e6-a98c-6e04aaaff495" />\
+The code for the diffuse lighting shader is shown above. Not much to see here considering it composes the most basic of lighting methods required for this project but even then the fact everything has to be manually typed out makes creating and bugfixing it a bit of a slog. This was coded around the time I was getting a bit sick of ShaderGraph and it did wonders for making me appreciate ShaderGraph's simplicity and readability.\
+\
+<img width="1093" height="604" alt="Screenshot 2026-10-28 210334" src="https://github.com/user-attachments/assets/8d6aca41-c0d7-4ccf-b988-1895128d818a" />\
+<img width="734" height="512" alt="Screenshot 2026-10-28 210258" src="https://github.com/user-attachments/assets/09e75ec1-90cf-4805-8d07-49e34ace9e69" />\
+Images of the ambient diffuse lighting shader made in shadergraph alongside the brown cliffsides it was applied to.\
+\
+<img width="763" height="466" alt="Screenshot 2026-10-28 210539" src="https://github.com/user-attachments/assets/5c60748a-cf8e-4c16-a1db-ed4e5df34cc0" />\
+<img width="490" height="434" alt="Screenshot 2026-10-28 210559" src="https://github.com/user-attachments/assets/cc1f3271-a7cd-46da-b3e1-e90a82130118" />\
+This shows off the specular lighting shader and the coin model it is attached to. Fun fact, I chose to make the coin models spin in game because I thought it would make the specular lighting on them more noticeable from a distance.\
+\
+<img width="533" height="472" alt="Screenshot 2026-10-28 210902" src="https://github.com/user-attachments/assets/6a2f1317-851e-4234-a7dd-1ccd8b747e76" />\
+<img width="566" height="523" alt="Screenshot 2026-10-28 210851" src="https://github.com/user-attachments/assets/3b7a399c-79e3-495b-a8ac-0f636e160f26" />\
+<img width="678" height="416" alt="Screenshot 2026-10-28 210827" src="https://github.com/user-attachments/assets/71249c00-6c59-499c-8669-7ee5e5660aa2" />\
+This is the emissive or "star" lighting I made for the stars. Simply put they needed to be bright and easy to notice so what better way is there to make them easy to see than making them bright and shining?\
+\
+<img width="587" height="512" alt="Screenshot 2026-10-28 211205" src="https://github.com/user-attachments/assets/07e90838-3543-4778-8d3a-37b83892b4c8" />\
+<img width="715" height="488" alt="Screenshot 2026-10-28 211132" src="https://github.com/user-attachments/assets/289df6ac-3f05-4eea-b444-9d8f534de773" />\
+The final lighting shader made for this project was the fresnel shader used on the outside rim of the UFO's body. Here's a close look at it so you can see it for yourself.\
 \
 Part 3:\
   The game has a
