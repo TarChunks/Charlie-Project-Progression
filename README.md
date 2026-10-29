@@ -60,7 +60,16 @@ This is the emissive or "star" lighting I made for the stars. Simply put they ne
 <img width="715" height="488" alt="Screenshot 2026-10-28 211132" src="https://github.com/user-attachments/assets/289df6ac-3f05-4eea-b444-9d8f534de773" />\
 The final lighting shader made for this project was the fresnel shader used on the outside rim of the UFO's body. Here's a close look at it so you can see it for yourself.\
 \
+<img width="576" height="642" alt="Screenshot 2026-10-28 212127" src="https://github.com/user-attachments/assets/031cfb9a-0451-4c39-b280-f3637927dbda" />\
+<img width="270" height="247" alt="Screenshot 2026-10-28 212200" src="https://github.com/user-attachments/assets/fcf005d9-ae91-4f92-9c38-92b27b83613e" />\
+This code shows how lighting can be toggled on and off using the number keys 1, 2, 3, and 4.\
 Part 3:\
-  The game has a
+  The game has one simple example of color grading, this is in the form of a contrast color adjustment to make he games colours pop a little more. I spent roughly 2 hours trying to get a LUT working in Unity but alas no matter what I did to the image Unity would always reject it.\
+\
+<img width="1090" height="597" alt="Screenshot 2026-10-28 211550" src="https://github.com/user-attachments/assets/849e4e96-201f-48c1-8b94-2fd6904e2a6c" />\
+<img width="1092" height="604" alt="Screenshot 2026-10-28 211537" src="https://github.com/user-attachments/assets/1f3c50fd-f28a-4625-a401-160d9645cf81" />\
+Two screenshots of the game with the contrast adjustment off (top) and on (bottom).\
+<img width="512" height="32" alt="Big LUT" src="https://github.com/user-attachments/assets/f0a77d3e-ff59-427a-99a2-880867b345bd" />\
+While it was never properly implemented I do have one of the LUT pngs I attempted to use for this project. Disappointing that I never got it working, I thought the colours I chose for it were quite nice.
 \
 Links:
