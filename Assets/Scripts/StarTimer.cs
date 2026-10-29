@@ -14,7 +14,6 @@ public class StarTimer : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        Vector3 Direction =
         transform.position = Vector3.MoveTowards(transform.position, player.transform.position, starSpeed);
     }
 }

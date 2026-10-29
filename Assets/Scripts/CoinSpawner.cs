@@ -31,12 +31,6 @@ public class CoinSpawner : MonoBehaviour
             SpawnCoin();
             timeTime = 0.0f;
         }
-        
-        if (coinCount == 0)
-        {
-            SpawnCoin();
-            timeTime = 0.0f;
-        }
 
         if (timeTime > spawnTime && coinCount < coinCap)
         {
