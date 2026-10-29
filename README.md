@@ -86,4 +86,17 @@ any second now...\
 <img width="285" height="290" alt="Screenshot 2026-10-28 213214" src="https://github.com/user-attachments/assets/cfd15a81-0e11-477c-b8ad-df4fd5c1bce9" />\
 A screenshot of the transparent shader along with the shield it's applied to. As you can clearly see the shield is partially transparent and you can see the UFO inside of it.\
 \
-Links:
+Project Proposal:\
+\
+	This game was conceived of as a method for filling out as many of the requirements of this project as possible. The game has a limited map size and scale which means it does not take as many resources or uniquely modeled objects to make it feel populated. The win condition of the game was created for entirely pragmatic reasons as coins could be given a lighting shader and would prove simple to code. The losing condition of stars falling on the player was in part inspired by Terraria where enemies can be instantly killed if fallen stars happen to land on top of them. All in all this project was entirely conceived of for utilitarian purposes.\
+\
+Reflection:\
+\
+	I was surprised at how many of the requirements I was able to complete for this assignment. I had assumed that with the short time period I had I was going to have to make major cuts on what  could be implemented but besides the LUT requirement I was able to get a majority of what was expected of the project. Another surprise to me is how much I ended up enjoying the creation of this game. Yes there were times where I was deeply frustrated (again, the LUT’s) but overall it felt quite enjoyable. A majority of my original vision for the game remained the same but a few things had to be dropped in the name of time. Besides the aforementioned LUT’s I had originally planned to implement a pause menu into the game where you could activate cheat codes that would have altered the games physics, spawn rates, etc, but it was ultimately cut for time (oh how naive I was 12 hours ago).\
+\
+Extension Reflection:\
+\
+	The reason no work was done before Tuesday of this week is because of a failure in communication both on myself and my team members along with a mismatch of personal expectations. I had gone into my group expecting that there would be some form of delegation of responsibilities so I spent much of my time asking the rest of the group for things to do (also in part because the project seemed to be over a year old and I figured that the rest of my team would know what to do best). The group on the other hand had an independent structure where team members were expected to choose what to work on on their own time. This discrepancy in expectations may have been solved had both parties not failed to communicate what they thought I was expected to do which led to extended periods where nothing was accomplished as I waited for instructions which would never arrive. This failure in communication also led to me being removed from the team without any previous notice or warning.\
+\
+Links:\
+\
