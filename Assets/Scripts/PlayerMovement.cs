@@ -24,13 +24,13 @@ public class PlayerMovement : MonoBehaviour
     //public Shader Shader3;
     //public Shader Shader4;
     public Material Material1;
-    public Material Material2;
+    //public Material Material2;
     public Material Material3;
     public Material Material4;
     public Material Material5;
     [SerializeField] string shaderToggle1x1Name = "_ToggleSmooth";
     [SerializeField] string shaderToggle1x2Name = "_ToggleMetal";
-    [SerializeField] string shaderToggle2x1Name = "_BaseBool";
+    //[SerializeField] string shaderToggle2x1Name = "_BaseColor";
     [SerializeField] string shaderToggle3x1Name = "_ShininessToggle";
     [SerializeField] string shaderToggle3x2Name = "_SmoothnessToggle";
     [SerializeField] string shaderToggle4x1Name = "_EmissionToggle";
@@ -90,13 +90,13 @@ public class PlayerMovement : MonoBehaviour
 
         }
 
-        if (Keyboard.current.digit2Key.wasPressedThisFrame)
-        {
+        //if (Keyboard.current.digit2Key.wasPressedThisFrame)
+        //{
 
-            float shaderValue1 = Material2.GetFloat(shaderToggle2x1Name);
-            boolTemp1 = Toggle(shaderValue1);
-            Material2.SetFloat("_BaseBool", boolTemp1);
-        }
+        //    float shaderValue1 = Material2.GetFloat(shaderToggle2x1Name);
+        //    boolTemp1 = Toggle(shaderValue1);
+        //    Material2.SetFloat("_BaseBool", boolTemp1);
+        //}
 
         if (Keyboard.current.digit3Key.wasPressedThisFrame)
         {
