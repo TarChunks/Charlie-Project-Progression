@@ -103,4 +103,5 @@ Extension Reflection:\
 	The reason no work was done before Tuesday of this week is because of a failure in communication both on myself and my team members along with a mismatch of personal expectations. I had gone into my group expecting that there would be some form of delegation of responsibilities so I spent much of my time asking the rest of the group for things to do (also in part because the project seemed to be over a year old and I figured that the rest of my team would know what to do best). The group on the other hand had an independent structure where team members were expected to choose what to work on on their own time. This discrepancy in expectations may have been solved had both parties not failed to communicate what they thought I was expected to do which led to extended periods where nothing was accomplished as I waited for instructions which would never arrive. This failure in communication also led to me being removed from the team without any previous notice or warning.\
 \
 Links:\
+https://www.youtube.com/watch?v=8Mr0gQnywa0 \
 \
