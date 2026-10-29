@@ -2,7 +2,6 @@ Charlie Project Progression README\
 Written by: Charlie Burnham\
 \
 Part 1:\
-\
   The game I've created for this project is simple in nature. You play as a UFO and your goal is to gather the coins that spawn around you in a small area and avoid stars that fall from the sky and explode. The player wins upon collecting 10 coins and loses upon touching either the stars or the explosions they create. The play area is restricted to a small grassy area surrounded by cliff faces. This was done for practicalities sake as I figured a small area would be much easier to apply shading and lighting to singlehandedly over a (relatively) brief period of time. The game also features a blue star that spawns later in the game and chases the player and a powerup that gives the player a shield, allowing them to survive a star hit.\
 \
 <img width="1093" height="604" alt="Screenshot 2026-10-28 210334" src="https://github.com/user-attachments/assets/cda6092b-cc80-4f9b-9b9b-14178836b076" />\
@@ -63,6 +62,7 @@ The final lighting shader made for this project was the fresnel shader used on t
 <img width="576" height="642" alt="Screenshot 2026-10-28 212127" src="https://github.com/user-attachments/assets/031cfb9a-0451-4c39-b280-f3637927dbda" />\
 <img width="270" height="247" alt="Screenshot 2026-10-28 212200" src="https://github.com/user-attachments/assets/fcf005d9-ae91-4f92-9c38-92b27b83613e" />\
 This code shows how lighting can be toggled on and off using the number keys 1, 2, 3, and 4.\
+\
 Part 3:\
   The game has one simple example of color grading, this is in the form of a contrast color adjustment to make he games colours pop a little more. I spent roughly 2 hours trying to get a LUT working in Unity but alas no matter what I did to the image Unity would always reject it.\
 \
@@ -70,6 +70,20 @@ Part 3:\
 <img width="1092" height="604" alt="Screenshot 2026-10-28 211537" src="https://github.com/user-attachments/assets/1f3c50fd-f28a-4625-a401-160d9645cf81" />\
 Two screenshots of the game with the contrast adjustment off (top) and on (bottom).\
 <img width="512" height="32" alt="Big LUT" src="https://github.com/user-attachments/assets/f0a77d3e-ff59-427a-99a2-880867b345bd" />\
-While it was never properly implemented I do have one of the LUT pngs I attempted to use for this project. Disappointing that I never got it working, I thought the colours I chose for it were quite nice.
+While it was never properly implemented I do have one of the LUT pngs I attempted to use for this project. Disappointing that I never got it working, I thought the colours I chose for it were quite nice.\
+\
+Part 4:\
+Two different shaders were made for this game. The first of the two was a scrolling offset shader used on the games powerup to create a spinning animation along the horizontal axis. The second of these shaders was a transparent shader made for the shield that can surround the player so you are able to see them inside the shield.\
+\
+<img width="763" height="413" alt="Screenshot 2026-10-28 212823" src="https://github.com/user-attachments/assets/159ed82f-0bc3-4cf3-9db4-7ff6513a00c7" />\
+<img width="1024" height="1024" alt="PowerUp Texture" src="https://github.com/user-attachments/assets/ed7a9f81-1769-4458-bd7f-fa7961b75bfe" />\
+<img width="485" height="378" alt="Screenshot 2026-10-28 212847" src="https://github.com/user-attachments/assets/0319fdfa-38a2-4931-8107-c643241cf436" />\
+Here is a screenshot of the Offset shader made in ShaderGraph alongside the texture used on the final power up. I also included a screenshot of the object with the shader applied so you can see it in motion...\
+\
+any second now...\
+\
+<img width="1075" height="444" alt="Screenshot 2026-10-28 213231" src="https://github.com/user-attachments/assets/ac5b45cb-d34d-4ee3-bf21-65144fec2dea" />\
+<img width="285" height="290" alt="Screenshot 2026-10-28 213214" src="https://github.com/user-attachments/assets/cfd15a81-0e11-477c-b8ad-df4fd5c1bce9" />\
+A screenshot of the transparent shader along with the shield it's applied to. As you can clearly see the shield is partially transparent and you can see the UFO inside of it.\
 \
 Links:
