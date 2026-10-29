@@ -42,6 +42,10 @@ Part 2:\
 <img width="414" height="668" alt="Screenshot 2026-10-28 205854" src="https://github.com/user-attachments/assets/d911d1bd-79c3-44e6-a98c-6e04aaaff495" />\
 The code for the diffuse lighting shader is shown above. Not much to see here considering it composes the most basic of lighting methods required for this project but even then the fact everything has to be manually typed out makes creating and bugfixing it a bit of a slog. This was coded around the time I was getting a bit sick of ShaderGraph and it did wonders for making me appreciate ShaderGraph's simplicity and readability.\
 \
+<img width="768" height="581" alt="Screenshot 2026-10-28 230744" src="https://github.com/user-attachments/assets/5df1dcb1-77bd-4954-956d-eab8e3810cf7" />\
+ADDENDUM:\
+Because I couldn't get the shader to function in my final build I had to replace it with a very basic shadergraph.\
+\
 <img width="1093" height="604" alt="Screenshot 2026-10-28 210334" src="https://github.com/user-attachments/assets/8d6aca41-c0d7-4ccf-b988-1895128d818a" />\
 <img width="734" height="512" alt="Screenshot 2026-10-28 210258" src="https://github.com/user-attachments/assets/09e75ec1-90cf-4805-8d07-49e34ace9e69" />\
 Images of the ambient diffuse lighting shader made in shadergraph alongside the brown cliffsides it was applied to.\
@@ -61,7 +65,7 @@ The final lighting shader made for this project was the fresnel shader used on t
 \
 <img width="576" height="642" alt="Screenshot 2026-10-28 212127" src="https://github.com/user-attachments/assets/031cfb9a-0451-4c39-b280-f3637927dbda" />\
 <img width="270" height="247" alt="Screenshot 2026-10-28 212200" src="https://github.com/user-attachments/assets/fcf005d9-ae91-4f92-9c38-92b27b83613e" />\
-This code shows how lighting can be toggled on and off using the number keys 1, 2, 3, and 4.\
+This code shows how lighting can be toggled on and off using the number keys 1, 3, and 4.\
 \
 Part 3:\
   The game has one simple example of color grading, this is in the form of a contrast color adjustment to make he games colours pop a little more. I spent roughly 2 hours trying to get a LUT working in Unity but alas no matter what I did to the image Unity would always reject it.\
